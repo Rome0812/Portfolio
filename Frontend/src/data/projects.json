@@ -1,0 +1,23 @@
+[
+  {
+    "title": "E-Commerce Website Carts",
+    "imageSrc": "projects/Project_1.png",
+    "description": "Built a full-featured e-commerce website modeled after the Cartimar marketplace. Integrated MongoDB to manage high-volume product listings and persistent user carts, focusing on a seamless shopping experience.",
+    "skills": ["React-Vite", "Express", "Node","MongoDB","CSS"],
+    "source": "https://github.com/Rome0812/E-Commerce-Website"
+  },
+  {
+    "title": "Registra",
+    "imageSrc": "projects/Project_2.png",
+    "description": "Developed a custom event management platform for ICpEP-NCR as a Capstone project. Streamlined registration workflows and attendee tracking to meet specific organizational requirements.",
+    "skills": ["React-Vite", "Express", "Node", "Tailwind CSS","MongoDB"],
+    "source": "https://github.com/Rome0812/Registra-Icpep-NCR"
+  },
+  {
+    "title": "Canteen Management System",
+    "imageSrc": "projects/Project_3.png",
+    "description": "A Java-based Canteen Management System featuring a custom file-handling backend. Utilizes File Reader/Writer for persistent storage of menu items, orders, and transaction history.",
+    "skills": ["Java"],
+    "source": "https://github.com/Rome0812/CanteenManagement"
+  }
+]

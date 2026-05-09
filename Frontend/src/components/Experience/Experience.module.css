@@ -1,0 +1,136 @@
+@import "../../vars.css";
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.sectionHeader {
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: var(--text-body);
+  color: var(--color-text-muted);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 16px;
+  background: var(--color-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  transition: all 0.25s ease;
+}
+
+.skill:hover {
+  border-color: rgba(255, 107, 53, 0.25);
+}
+
+.skillImageContainer {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-md);
+}
+
+.skillImageContainer img {
+  width: 32px;
+  height: 32px;
+}
+
+.skill p {
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historyItem {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: var(--color-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--color-primary);
+  transition: all 0.25s ease;
+}
+
+.historyItem:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.historyItem img {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.historyItemDetails h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.historyItemDetails p {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.historyItemDetails ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

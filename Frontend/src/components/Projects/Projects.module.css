@@ -1,0 +1,31 @@
+@import "../../vars.css";
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.sectionHeader {
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: var(--text-body);
+  color: var(--color-text-muted);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+  width: 100%;
+}
